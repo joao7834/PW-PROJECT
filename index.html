@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mercado do Hermes</title>
+    <link rel="stylesheet" href="src/style/style.css" />
+    <script src="src/script/script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <div>
+          <img src="src/assets/logo" alt="logo" />
+        </div>
+        <div class="logoText">
+          <h1>Kerykeion</h1>
+          <p>Mercado dos Caminhos</p>
+        </div>
+      </div>
+      <p class="titulo">Relíquias humanas. Tesouros divinos</p>
+    </header>
+    <nav>
+      <input type="text" placeholder="Procurar artefatos..." id="input" />
+    </nav>
+    <main>
+      <aside class="categ">
+        <h3>CATEGORIAS</h3>
+        <button data-categ="Alls">Todos</button>
+        <button data-categ="Artefato">Artefatos</button>
+        <button data-categ="Relíquia">Relíquias</button>
+        <button data-categ="Arma">Armas</button>
+        <button data-categ="Defesa">Defesa</button>
+        <button data-categ="Acessório">Acessórios</button>
+      </aside>
+      <div class="conteudo">
+        <div class="titCat">
+          <div>
+            <span>CATÁLOGO</span>
+            <h2>Itens disponíveis</h2>
+
+            <p>
+              Encontre artefatos, relíquias e equipamentos trazidos pelos
+              caminhos do Olimpo.
+            </p>
+          </div>
+        </div>
+        <section class="catalogo" id="catalogo"></section>
+      </div>
+    </main>
+    <footer>
+      <p>Todo caminho leva à algum lugar</p>
+    </footer>
+  </body>
+</html>
