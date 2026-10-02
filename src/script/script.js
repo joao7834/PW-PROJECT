@@ -495,3 +495,8 @@ function mensagemOlimpo() {
 }
 
 mensagemOlimpo();
+
+trilho.addEventListener("click", () => {
+  trilho.classList.toggle("artemis");
+  body.classList.toggle("artemis");
+});
