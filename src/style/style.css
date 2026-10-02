@@ -1,0 +1,332 @@
+:root {
+    --backgroundColor: #fcf8f2;
+    --textColor: #2b2319;
+    --cardBackground: #ffffff;
+    --primaryColor: #e69d00; 
+    --borderColor: #d1a153;  
+    --subtextColor: #5c5246;
+    --cardDesc: #786c5e;
+}
+
+body.artemis {
+    --backgroundColor: #0d1117;
+    --textColor: #e6edf3;
+    --cardBackground: #161b22;
+    --primaryColor: #79c0ff; 
+    --borderColor: #388bfd;  
+    --subtextColor: #8b949e;
+    --cardDesc: #6e7681;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--backgroundColor);
+    color: var(--textColor);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    min-height: 100vh;
+    transition: .5s;
+}
+
+header {
+    padding: 6vh 8vh;
+    border-bottom: 1px solid var(--borderColor);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+}
+
+.logo img {
+    width: 100px;        /* Defina a largura ideal da imagem aqui (ex: 50px, 60px) */
+    height: auto;   
+    border-radius: 20px;
+}
+
+.logo h1 {
+    font-size: 40px;
+    letter-spacing: 6px;
+    color: var(--primaryColor);
+}
+
+.logo p {
+    margin-top: 0.8vh;
+    color: var(--subtextColor);
+}
+
+.titulo {
+    margin-top: 15px;
+    color: var(--subtextColor);
+    font-style: italic;
+}
+
+.statsOlmp {
+    display: flex;
+    align-items: center;
+    background-color: var(--cardBackground);
+    border: 1px solid var(--borderColor);
+    padding: 8px 16px;
+    border-radius: 20px;
+    margin-top: 15px;
+    font-size: 14px;
+    color: var(--primaryColor);
+    width: fit-content;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+    background-color: var(--backgroundColor);
+}
+
+#input {
+    width: 100%;
+    max-width: 700px;
+    padding: 15px 20px;
+    border: 1px solid var(--borderColor);
+    border-radius: 4px;
+    background-color: var(--cardBackground);
+    color: var(--textColor);
+    font-size: 16px;
+}
+
+main {
+    display: flex;
+    gap: 50px;
+    padding: 50px 60px;
+}
+
+.conteudo {
+    flex: 1;
+}
+
+.categ {
+    width: 200px;
+    flex-shrink: 0;
+    padding-right: 25px;
+    border-right: 1px solid var(--borderColor);
+}
+
+.categ h3 {
+    color: var(--borderColor);
+    letter-spacing: 3px;
+    font-size: 15px;
+    margin-bottom: 25px;
+}
+
+.categ button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    padding: 12px 8px;
+    margin-bottom: 8px;
+    border: none;
+    border-left: 2px solid transparent;
+    background: none;
+    color: var(--subtextColor);
+    font-family: Georgia, 'Times New Roman', serif;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.categ button:hover {
+    color: var(--primaryColor);
+}
+
+.categ button.active {
+    color: var(--primaryColor);
+    font-weight: bold;
+    border-left: 2px solid var(--primaryColor);
+    padding-left: 12px;
+    transition: 0.2s;
+}
+
+.titCat {
+    margin-bottom: 30px;
+}
+
+.titCat span {
+    color: var(--borderColor);
+    font-size: 13px;
+    letter-spacing: 4px;
+}
+
+.titCat h2 {
+    margin-top: 5px;
+    font-size: 36px;
+    color: var(--textColor);
+}
+
+.titCat p {
+    color: var(--subtextColor);
+    margin-top: 5px;
+}
+
+
+#catalogo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border: 1px solid var(--borderColor);
+    border-radius: 6px;
+    background-color: var(--cardBackground);
+    width: 250px;
+    min-height: 320px;
+}
+
+.card:hover {
+    border-color: var(--primaryColor);
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover; 
+    margin-bottom: 20px;
+    border-radius: 4px;
+    border: 1px solid var(--borderColor);
+}
+
+.card h3 {
+    font-size: 20px;
+    color: var(--textColor);
+    margin-bottom: 10px;
+}
+
+.card span {
+    width: fit-content;
+    padding: 5px 9px;
+    border: 1px solid var(--borderColor);
+    border-radius: 3px;
+    color: var(--borderColor);
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.card p {
+    font-size: 14px;
+    color: var(--cardDesc);
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.card h4 {
+    margin-top: auto;
+    padding-top: 15px;
+    font-size: 20px;
+    color: var(--primaryColor);
+}
+
+footer {
+    margin-top: 60px;
+    padding: 40px;
+    border-top: 1px solid var(--borderColor);
+    text-align: center;
+    background-color: var(--backgroundColor);
+}
+
+footer span {
+    color: var(--primaryColor);
+    font-size: 20px;
+    letter-spacing: 3px;
+}
+
+footer p {
+    margin-top: 10px;
+    color: var(--subtextColor);
+}
+
+.destaqueDay {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background: var(--backgroundColor);
+    border: 2px solid var(--primaryColor);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.destaqueBadge {
+    color: var(--primaryColor);
+    font-weight: bold;
+    font-size: 13px;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.dayItemContainer {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    width: 100%;
+}
+
+.destaqueImg {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 6px;
+    border: 1px solid var(--borderColor);
+}
+
+.destaqueInfo h3 {
+    color: var(--primaryColor);
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+.destaqueInfo p {
+    color: var(--cardDesc);
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.destaquePrice {
+    color: var(--primaryColor);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.trilho {
+    width: 65px;
+    height: 32px;
+    background-color: var(--borderColor);
+    border-radius: 50px;
+    position: relative;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+.trilho .indicador {
+    width: 24px;
+    height: 24px;
+    background-color: var(--backgroundColor);
+    border-radius: 50%;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    transition: left 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+body.artemis .trilho .indicador {
+    left: 37px;
+}
